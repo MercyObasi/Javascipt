@@ -1,3 +1,3 @@
 # Javascript
 Basic node.js syntax
-Apply Vanilla javascript in Html and CSS
+Applied Vanilla javascript in Html and CSS
