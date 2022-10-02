@@ -100,7 +100,11 @@ while (fuel > 5){
     fuel --; // or fuel -=1
 }
 
-
+let i = 1
+do{
+    console.log(i);
+    i++
+}while(i<=5)
 
 for(var ct = 1; ct < 10; ct++ ) {
     if (ct == 5) break;
@@ -136,7 +140,7 @@ console.log(Boolean(''));  // Fasly
 
 console.log(true + true);
 
-*/
+
 
 let numb = 4
 let f = numb++ // Post Increment = Assignment then Increment
@@ -149,3 +153,50 @@ console.log(another, numb2);
 console.log("Wet" < "Gun"); // It converts the ASCII values 
 
 let gh = 1, y = 45, k = 6
+*/
+
+let givenValue = 5
+if (givenValue % 2 === 0)
+    console.log("Even")
+else
+    console.log("Odd")
+
+// Ternary operator
+console.log(givenValue % 2 === 0? 'Even': 'Odd')
+
+// Switch Statement 
+
+let day = "Saturday"
+
+switch(day){
+    case 'Monday':
+        console.log('7am')
+        break;
+    case 'Tuesday':
+    case 'Wednesday':
+    case 'Thursday':
+        console.log('4am')
+        break;
+    case 'Friday':
+        console.log('9am')
+        break;
+    case 'Saturday':
+    case 'Sunday':
+        console.log('8am')
+        break;
+    default:
+        console.log('typo, Case sensitive')
+}
+// Template literal
+let LastNumber = 8
+console.log(`This is template literal ${LastNumber}`)
+
+let um = 5678432
+let mu = ""
+while(um>0){
+    jk = um % 10
+    console.log(jk)
+    um = parseInt(um/10)
+    mu += jk
+}
+console.log(Number(mu))
