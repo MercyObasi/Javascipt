@@ -1,7 +1,7 @@
 /* Mutiple lines comment
 // git commands
-git pull <remote url> master
-git push -u <remote url> master
+git pull 
+git push 
 
  // once you declare a variable, you don't need to declare it again
 let count = 0
