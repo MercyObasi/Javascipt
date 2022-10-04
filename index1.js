@@ -1,4 +1,7 @@
 /* Mutiple lines comment
+// git commands
+git pull <remote url> master
+git push -u <remote url> master
 
  // once you declare a variable, you don't need to declare it again
 let count = 0
@@ -84,7 +87,7 @@ ass = {'name': 34, 'code': 'javascript'}
 console.log(ass['name'])
 console.log(ass.code)
 
-// control structures
+// Control Structures
 var r = 7;
 if (r < 3) {
     console.log('less');
@@ -153,7 +156,7 @@ console.log(another, numb2);
 console.log("Wet" < "Gun"); // It converts the ASCII values 
 
 let gh = 1, y = 45, k = 6
-*/
+
 
 let givenValue = 5
 if (givenValue % 2 === 0)
@@ -200,3 +203,16 @@ while(um>0){
     mu += jk
 }
 console.log(Number(mu))
+*/
+let aliens = {
+    'user': 'Renny',
+    'tech': 'Python',
+    'laptop' : {
+        make : 'Mac',
+        cpu : 'Core i7',
+        ram : '12gb',
+    }
+
+}
+// delete alien.user
+console.log(aliens)
