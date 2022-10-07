@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" required minlength="3" />
+      </div>
+      <div>
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" required minlength="3" />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="myexample@gmail.com"
+          required
+        />
+      </div>
+      <div>
+        <label for="number">Phone Number:</label>
+        <input
+          type="tel"
+          name="number"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="123-345-6789"
+        />
+      </div>
+      <div>
+        <label for="dob">Date of birth</label>
+        <input type="date" name="dob" max="2012-01-01" required />
+      </div>
+      <div>
+        <label for="pwd">Password</label>
+        <input
+          type="password"
+          name="pwd"
+          id="pwd"
+          required
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+        />
+      </div>
+      <div>
+        <label for="property">What do you have:</label>
+        <select name="property" id="property">
+          <option value="0">Choose an option</option>
+          <option value="house">House</option>
+          <option value="car">Car</option>
+          <option value="estate">Estate</option>
+          <option value="jet">Jet</option>
+          <option value="time">Time</option>
+        </select>
+      </div>
+      <div>
+        <input type="checkbox" name="tesla" />
+        <label for="tesla">Tesla</label> <br />
+        <input type="checkbox" name="ford" checked />
+        <label for="ford">Ford</label> <br />
+        <input type="checkbox" name="ferrari" />
+        <label for="ferrari">Ferrari</label> <br />
+        <input type="checkbox" name="fiat" />
+        <label for="fiat">Fiat</label>
+      </div>
+      <div>
+        <p>What is your favorite language</p>
+        <input type="radio" name="lang" />
+        <label for="css">CSS</label> <br />
+        <input type="radio" name="lang" />
+        <label for="html">Html</label> <br />
+        <input type="radio" name="lang" />
+        <label for="python">Python</label> <br />
+        <input type="radio" name="lang" />
+        <label for="javascript">Javascript</label> <br />
+        <label for="document"> Upload your document</label>
+        <input type="file" name="document" />
+      </div>
+      <div>
+        <textarea name="story" id="story" cols="30" rows="10" required>
+ Enter your story...</textarea
+        >
+      </div>
+      <div>
+        <input type="reset" value="Clear" />
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
