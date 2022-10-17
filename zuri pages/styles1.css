@@ -1,0 +1,104 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height:100vh;
+    padding-top: 1rem;
+    background-image: linear-gradient(115deg,
+    rgba(58, 58, 158, 0.8),
+    rgba(136, 136, 207, 0.8)),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family:  Arial;
+}
+.register{
+    width: 50%;
+    height: 41em;
+    padding: 1.3rem 3rem 2rem 3rem;
+    background-color: #ffffff;
+    color: hsla(0, 11%, 5%, 0.886);
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.container{
+    width: 100%;
+    height: 3.5em;
+    margin: auto;
+
+}
+label{
+    display: block;
+    padding: 0.2rem, auto;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+.input{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 25px;
+    padding: 3px;
+    border-width: 0 0 0.5px;
+    border-radius: 5px;
+    border-color: rgba(22, 153, 213, 0.948);
+    box-shadow: 0 0 5px #0f5288;
+    cursor: pointer;
+}
+select:focus, input:focus{
+    outline: none;
+    border: 0.2px;
+    border-color: #06508d;
+    box-shadow: 0 0 10px #06508d;
+    padding: 3px;
+}
+#heading{
+    text-align: center;
+    margin: auto;
+}
+select{
+    box-sizing: border-box;
+    width: 50%;
+    height: 25px;
+    padding: 3px;
+    display: inline-block;
+    border-width: 0.5px;
+    border-color: rgba(22, 153, 213, 0.948);
+    box-shadow: 0 0 5px #0f5288;
+    border-radius: 5px;
+    border-color: rgba(22, 153, 213, 0.948);
+    cursor: pointer;
+
+}
+.inline_block{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+#favcolor{
+    width: 25%;
+    margin-right: 10em;
+    background-color: white; 
+    border-style: initial;
+    cursor: pointer;
+}
+
+p{
+    text-align: center;
+    cursor: pointer;
+}
+#submit{
+    background-color: hsla(262, 26%, 47%, 0.82);
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}

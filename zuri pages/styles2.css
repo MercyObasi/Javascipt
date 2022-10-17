@@ -1,0 +1,89 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height:100vh;
+    padding-top: 1rem;
+    background-image: linear-gradient(115deg,
+    rgba(58, 58, 158, 0.8),
+    rgba(136, 136, 207, 0.8)),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family:  Arial;
+}
+form{
+    width: 50%;
+    height: 60%;
+    padding: 3rem;
+    background-color: #ffffff;
+    color: hsla(0, 11%, 5%, 0.886);
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+div{
+    width: 100%;
+    height: 3.5em;
+    margin: 30px 10px;
+
+}
+h1{
+    text-align: center;
+}
+label{
+    display: block;
+    padding: 0.2rem, auto;
+    font-size: 17px;
+    margin: 10px;
+}
+input,button{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    border-width: 0 0 0.5px;
+    border-radius: 5px;
+    border-color: rgba(22, 153, 213, 0.948);
+    cursor: pointer;
+}
+input{
+    box-shadow: 0 0 5px #0f5288;
+}
+button{
+    background-color: hsla(341, 59%, 32%, 0.82);
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: 10px;
+    border: 0;
+    color: whitesmoke;
+    font-size: medium;
+}
+input:focus{
+    outline: none;
+    border: 0.2px;
+    border-color: #06508d;
+    box-shadow: 0 0 10px #06508d;
+    padding: 3px;
+}
+.psw{
+    text-align: right;
+}
+
+#register{
+    margin-top: 150px;
+    text-align: center;
+}
+a:hover{
+    color: black;
+    cursor: pointer;
+}
