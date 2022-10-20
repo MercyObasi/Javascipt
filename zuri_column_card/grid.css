@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --padding-grid-item: 35px;
+    --height-grid-item: 30em;
+}
+main{
+    background-color: aliceblue;
+    height: 100vh;
+}
+.grid-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 300px 300px 300px;
+    height: 100%;
+    align-content: center;
+
+}
+.grid-item-1{
+    height: var(--height-grid-item);
+    padding: var(--padding-grid-item);
+    background-color:  hsl(31, 77%, 52%);
+    position: relative;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+.grid-item-2{
+    height: var(--height-grid-item);
+    padding: var(--padding-grid-item);
+    background-color: hsl(184, 100%, 22%);
+    position: relative;
+
+}
+.grid-item-3{
+    height: var(--height-grid-item);
+    padding: var(--padding-grid-item);
+    background-color: hsl(179, 100%, 13%);
+    position: relative;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+@font-face {
+    font-family: LexendDeca;
+    src: url(./Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: BigShouldersDisplay;
+    src: url(./Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+img{
+    box-sizing: border-box;
+    margin: auto;
+    padding: 10px 10px 10px 0;
+}
+
+h2{
+    padding-bottom: 10px;
+    color: hsl(0, 0%, 95%);
+    font-family: BigShouldersDisplay;
+    font-weight: 700px;
+    letter-spacing: 2.5px;
+
+}
+p{
+    padding: 10px 10px 10px 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: LexendDeca;
+    word-spacing: 2px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+button{
+    width: 9em;
+    padding: 10px;
+    position: absolute;
+    left: 35px;
+    bottom: 45px;
+    background-color: transparent;
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 20px;
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+    font-family: LexendDeca;
+
+}
