@@ -8,15 +8,17 @@
     --padding-flex-item: 35px;
     --height-flex-item: 75%;
 }
+body{
+    background-color: hsl(0, 0%, 95%);
+}
 .flex-container{
     display: flex;
     justify-content: center;
-    height: 100vh;
-    width: 100%;
+    height: 90vh;
+    width: 80%;
+    margin: auto;
     align-items: center;
     flex-wrap: nowrap;
-    background-color: hsl(0, 0%, 95%);
-
 }
 .flex-item{
     width: var(--width-flex-item);
@@ -80,10 +82,9 @@ button{
     position: absolute;
     left: 35px;
     bottom: 45px;
-    background-color: transparent;
-    border: 1px solid hsl(0, 0%, 95%);
+    background-color:  hsl(0, 0%, 95%);
+    border:  hsl(0, 0%, 95%);
     border-radius: 20px;
-    color: hsl(0, 0%, 95%);
     cursor: pointer;
     font-family: LexendDeca;
 
@@ -96,4 +97,12 @@ button{
     .flex-item{
         width: 100%;
     }
+}
+footer{
+    color: hsla(100, 100%, 100%, 0);
+    font-size: 15px;
+    font-family: LexendDeca;
+    font-weight: 400;
+    margin: 30px;
+
 }

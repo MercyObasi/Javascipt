@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #edc2cb;
+}
+nav img{
+    width: 10%;
+}
+nav img:hover{
+    width: 11%;
+    mix-blend-mode: darken;
+    cursor: pointer;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+}
+nav ul > li{
+    display: inline-flex;
+    list-style-type: none;
+    margin-right: 20px;
+}
+@font-face{
+    font-family: InknutAntiqua;
+    src: url(./InknutAntiqua-Medium.ttf);
+}
+nav ul > li> a{
+    text-decoration: none;
+    color: #8D021F;
+    font-size: 19px;
+    font-weight: 300;
+    font-family: InknutAntiqua;
+}
+nav ul > li> a:hover, .button:hover{
+    text-decoration: none;
+    background-color: #8D021F;
+    color: #edc2cb;
+    padding: 3px 6px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.body-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.section-1 p{
+    color: #8D021F;
+    font-size: 17px;
+    font-weight: 200;
+    font-family: InknutAntiqua;
+}
+
+.button{
+    padding: 5px;
+    background-color: #a44c60;              
+    color: #edc2cb;
+    border-radius: 20px;
+    border: 0;
+    font-family: InknutAntiqua;
+}
+h1{
+    color: #8D021F;
+    font-family: InknutAntiqua;
+}
+.section-2 img{
+    width: 20rem;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #33030e;
+    color:#edc2cb;
+    font-family: InknutAntiqua;
+    text-align: right;
+}
+footer p{
+    padding: 5px;
+    display: inline;
+}
