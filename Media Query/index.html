@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .column {
+      width: 25%;
+      padding: 30px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      .column {
+        width: 50%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
+  <body>
+    <div>
+      <h2>This is a simple website on media query</h2>
+      <p>
+        <strong
+          >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</strong
+        >
+        Laboriosam molestiae eos neque rem totam dolores quam quia repellat
+        minima atque!
+      </p>
+    </div>
+    <div class="row">
+      <div class="column" style="background-color: #aaaaaa">
+        <h3>Column 1</h3>
+        <p>Some text....</p>
+      </div>
+      <div class="column" style="background-color: #bbbbbb">
+        <h3>Column 2</h3>
+        <p>Some text....</p>
+      </div>
+      <div class="column" style="background-color: #cccc">
+        <h3>Column 3</h3>
+        <p>Some text....</p>
+      </div>
+      <div class="column" style="background-color: #dddd">
+        <h3>Column 4</h3>
+        <p>Some text....</p>
+      </div>
+    </div>
+  </body>
+</html>
