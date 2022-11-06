@@ -203,7 +203,7 @@ while(um>0){
     mu += jk
 }
 console.log(Number(mu))
-*/
+
 let aliens = {
     'user': 'Renny',
     'tech': 'Python',
@@ -216,3 +216,51 @@ let aliens = {
 }
 // delete alien.user
 console.log(aliens)
+
+// Tenary operations
+let seven = false
+seven?console.log('hi'):console.log('na')  // This means if(?) seven is true print hi else(:) print na 
+*/
+// Rest Parameter
+//This allows a function to take indefinite number of argument as an array
+function addSum(...args){
+    let sum = 0
+    for (let arg of args) sum +=arg;
+    return sum
+}
+console.log(addSum(2,3,4,5,67,8))
+
+// For...in and For...of
+let randomPeople = ["Janitor", "princess", "student"]
+
+for(let i in randomPeople ) console.log(i); // "in" will give the index of the items cause it's concerned about property keys of an object
+
+let animals = ["Dog", "Cat", "Snake"]
+
+for(let j of animals) console.log(j); // "of" will give the values in the array 
+
+// Spread Operator 
+// This is used to destructure or combine objects, arrays, list
+let make = {
+    laptop: "hp",
+    ram: "4gb"
+}
+let industry = {
+    rom: "500gb"
+}
+let aboutLaptops = {...make, ...industry} // combining 
+console.log(aboutLaptops)
+
+const numbers = [1, 2, 3, 4, 5, 6];
+
+const [one, two, ...rest] = numbers; //destructuring
+
+console.log(one, two, rest)
+
+// Arrow Functions
+let hello = (val) => "Hey! " + val;
+
+// without ()
+let greet = val => "Good Morning! " + val;
+
+console.log(hello("John"),",",greet("John"))

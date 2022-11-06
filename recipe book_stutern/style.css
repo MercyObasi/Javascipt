@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+}
+body {
+  background-color: rgb(237, 224, 226);
+  width: 90%;
+  margin: auto;
+  font-family: "Bellota Text", cursive;
+}
+.flex-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.flex-1 > div > p {
+  font-size: 20px;
+}
+.rib_roast {
+  width: 100%;
+  height: 250px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+h1,
+h3 {
+  text-align: center;
+  color: #dc3243;
+  font-size: 30px;
+}
+.about_meal {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+.icon {
+  display: block;
+  width: 50px;
+  margin: 15px auto;
+}
+.section-2 {
+  width: 100%;
+  margin-top: 10px;
+}
+th,
+td {
+  border-bottom: 1px solid white;
+  padding: 5px;
+  font-size: 20px;
+}
+.second-heading,
+.second-column {
+  border-left: 1px solid white;
+}
+table {
+  background-color: #bb6972;
+  border-radius: 10px;
+  padding: 10px;
+}
+.section-3 {
+  width: 100%;
+}
+
+li {
+  padding: 5px;
+  font-size: 20px;
+}
+.heat > ul > li {
+  list-style-type: disc;
+}
+.section-3 {
+  width: 100%;
+}
+.grid-container {
+  display: grid;
+  width: 100%;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 20px;
+}
+.grid-container > div > img {
+  width: 90%;
+  height: 200px;
+  margin: auto;
+  border-radius: 5px;
+}
+.grid-container > div > p {
+  text-align: center;
+  font-size: 18px;
+}
+.grid-container > div > img:hover {
+  width: 93%;
+  height: 203px;
+  opacity: 0.8;
+}
